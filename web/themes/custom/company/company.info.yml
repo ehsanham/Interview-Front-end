@@ -10,5 +10,5 @@ regions:
   footer: Footer
 
 libraries:
-  - alghazali/reset
-  - alghazali/global
+  - company/reset
+  - company/global
