@@ -1,35 +1,36 @@
-uuid: ffc44375-320c-46ec-8f6e-43fd04b2f2d0
+uuid: 5c0ea258-7eff-44aa-9b04-e5590679b502
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
-    - node.type.page
+    - field.field.node.landing_page.field_content
+    - node.type.landing_page
   module:
+    - paragraphs
     - path
-    - text
-_core:
-  default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
-id: node.page.default
+id: node.landing_page.default
 targetEntityType: node
-bundle: page
+bundle: landing_page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 31
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_content:
+    type: entity_reference_paragraphs
+    weight: 121
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -68,10 +69,10 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+    region: content
     third_party_settings: {  }
 hidden: {  }
