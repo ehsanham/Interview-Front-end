@@ -1,0 +1,13 @@
+@import 'normalize.scss/normalize';
+@import 'sass-toolkit/stylesheets/toolkit/kickstart';
+@import 'breakpoint-sass/stylesheets/breakpoint';
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+  display: flex;
+}
