@@ -21,12 +21,12 @@ gulp.task('twig', () => {
 gulp.task('sass', () => {
   return gulp
     .src('src/sass/*.scss')
+    .pipe(glob())
     .pipe(
       sass({
         includePaths: ['./node_modules']
       })
     )
-    .pipe(glob())
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(gulp.dest('dist'));
 });
