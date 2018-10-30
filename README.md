@@ -36,7 +36,6 @@ you need to do is setup content and start theming based on the PSDs.
     - Copyrights block
 
 ### Submission
-- Fork the repository.
-- From your fork create a branch named `IFE-NAME`, replacing `NAME` with your first name.
-- Submit a pull request.
-
+* Set up your github.com account if you don't already have one.
+* Clone the repository
+* Push your changes as a public repo in GitHub and submit the link
